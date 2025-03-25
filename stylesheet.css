@@ -63,7 +63,7 @@ body {
 
 /* Sezione Hero */
 .hero {
-    background-image: url('file:///Users/carlottasinisi/Desktop/sito_web/immagini/sfondo/sfondo.jpg');
+    background-image: url('immagini/sfondo/sfondo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
