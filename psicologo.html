@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentina Garino - Psicoterapeuta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="">
+    <!-- Navbar -->
+    <nav class="py-0.5">
+        <!-- Contenitore principale della Navbar -->
+        <div class="container mx-0 px-2 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <div class="logo-text">
+                <a href="index.html">
+                    D.ssa <span class="highlight">V</span>alentina <span class="highlight">G</span>arino
+                </a>
+            </div>
+            
+            <!-- Icona Hamburger -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Fine Logo -->
+
+            <!-- Menu di Navigazione -->
+            <ul class="navbar-menu">
+                <li>
+                    <a href="index.html" class="navbar-link">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="servizi.html" class="navbar-link">
+                        Servizi
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="articoli.html" class="navbar-link" style="text-decoration: underline;">
+                        Articoli
+                    </a>
+                </li>
+            </ul>
+            <!-- Fine Menu di Navigazione -->
+        </div>
+        <!-- Fine Contenitore principale della Navbar -->
+    </nav>
+    <!-- Fine Navbar -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navbar-menu");
+        
+            hamburger.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+        </script>
+
+<!-- Sezione Articolo -->
+<section class="articolo">
+    <div class="container-articolo">
+        <h2>Psicologo, psicoterapeuta, neurologo, <br>psichiatra...facciamo un po’ di chiarezza</h2>
+        <div class="underline-articolo_psico"></div>
+
+        <div class="contenuto-articolo">
+            <!-- Immagine a sinistra -->
+            <div class="immagine-articolo_psico">
+                <img src="immagini/articoli/psicologo.jpg" 
+                     alt="La depressione post partum"
+                     width="300"
+                     height="200">
+            </div>
+
+            <!-- Testo a destra dell'immagine -->
+            <div class="testo-articolo">
+                <h3>Lo psicologo</h3>
+            <p>
+                Lo psicologo è un professionista che ha conseguito una laurea quinquennale in psicologia, ha effettuato un tirocinio annuale post-lauream 
+                e ha superato l’esame di stato per ottenere l’abilitazione all’esercizio della professione e l’iscrizione all’Albo dell’Ordine degli Psicologi 
+                della regione di appartenenza.
+            <br>
+                La professione di psicologo comprende l'uso degli strumenti conoscitivi e di intervento per la prevenzione, la diagnosi, le attività di 
+                abilitazione-riabilitazione e di sostegno in ambito psicologico rivolte alla persona, al gruppo, agli organismi sociali e alle comunità.
+            <br>
+                <em>(L. 18.02.1989, n.56, art. n.1)</em>
+            </p>
+
+            <h3> Lo psicoterapeuta</h3>
+            <p>
+                Lo psicoterapeuta è un professionista psicologo o medico che ha conseguito una specializzazione universitaria post-lauream oppure in scuole 
+                di specializzazione private, di durata almeno quadriennale. Queste ultime devono essere formalmente riconosciute e autorizzate da un'apposita 
+                Commissione del MIUR (Ministero dell'Università e della Ricerca) ad erogare la relativa formazione specialistica, che abilita all’esercizio 
+                della psicoterapia. Lo psicoterapeuta deve, inoltre, aver effettuato un percorso di analisi personale.
+            </p>
+            </div>
+        </div>
+
+        <!-- Testo che continua sotto la foto -->
+        <div class="testo-articolo_2_psicologo">
+            <h3>Neurologo</h3>
+            <p>
+                E’ un medico specializzato in Neurologia, che si interessa del sistema nervoso centrale e periferico esclusivamente da un punto di vista organico.
+            </p>
+            <h3>Psichiatra</h3>
+            <p>
+                E' un professionista laureato in medicina e chirurgia, specializzato in psichiatria. Si occupa prevalentemente dei disturbi psichici medio 
+                gravi e marcatamente gravi e propone interventi a carattere farmacologico (psicofarmaci). Ha prevalentemente una impostazione di tipo 
+                organicistico. La "mente" è intesa come un organo e la sua cura è farmacologica. Accanto a specialisti che privilegiano l’uso dei farmaci 
+                si trovano altri che affrontano le malattie associando ai farmaci un intervento anche psicologico (gestito da loro o da altri professionisti). 
+                Lo psichiatra non sempre svolge l’attività di psicoterapeuta.
+                <br><br>
+                Avviene di sovente che sia lo psicologo/psicoterapeuta che lo psichiatra forniscano contemporaneamente il loro supporto ad una stessa persona, 
+                ottenendo un risultato migliore di quello che verrebbe raggiunto attraverso l'utilizzo esclusivo di uno dei due approcci.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container-footer">
+        
+        <!-- Sezione Fumetto -->
+        <div class="fumetto">
+            <img src="immagini/footer/jpg.svg" alt="Fumetto">
+        </div>
+
+        <!-- Sezione Social -->
+        <div class="social">
+            <a href="https://www.instagram.com/psicologagarino?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Icona Instagram">
+                <span class="sr-only">Profilo Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/psicoterapeutagarino" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Icona Facebook">
+                <span class="sr-only">Profilo Facebook</span>
+            </a>
+        </div>
+
+        <!-- Sezione Contatti -->
+        <div class="contatti">
+            <p><i class="fas fa-map-marker-alt"></i> Via Cibrario 53, Torino</p>
+            <p><i class="fas fa-phone-alt"></i> +39 3498417403</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">garino.valentina@gmail.com</a></p>
+        </div>
+
+        <!-- Sezione P.IVA e Copyright -->
+        <div class="info-legali">
+            <p>P.IVA 02417570971</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+            <p>© 2024 Valentina Garino - Tutti i diritti riservati</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

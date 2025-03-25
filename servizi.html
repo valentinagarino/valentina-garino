@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentina Garino - Psicoterapeuta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="">
+    <!-- Navbar -->
+    <nav class="py-0.5">
+        <!-- Contenitore principale della Navbar -->
+        <div class="container mx-0 px-2 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <div class="logo-text">
+                <a href="index.html">
+                    D.ssa <span class="highlight">V</span>alentina <span class="highlight">G</span>arino
+                </a>
+            </div>
+            
+            <!-- Icona Hamburger -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Fine Logo -->
+
+            <!-- Menu di Navigazione -->
+            <ul class="navbar-menu">
+                <li>
+                    <a href="index.html" class="navbar-link">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="servizi.html" class="navbar-link" style="text-decoration: underline;">
+                        Servizi
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="articoli.html" class="navbar-link">
+                        Articoli
+                    </a>
+                </li>
+            </ul>
+            <!-- Fine Menu di Navigazione -->
+        </div>
+        <!-- Fine Contenitore principale della Navbar -->
+    </nav>
+    <!-- Fine Navbar -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navbar-menu");
+        
+            hamburger.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+        </script>
+</body>
+
+
+<!-- Sezione Servizi -->
+<section class="servizi">
+    <div class="container-servizi">
+        <h2>Servizi</h2>
+        <div class="underline-servizi"></div>
+
+        <div class="box-servizi">
+            <!-- Terapia Individuale -->
+            <div class="card-servizio">
+                <div class="icona-servizio"><i class="fas fa-user-graduate"></i></div>
+                <h3>Psicoterapia in adolescenza</h3>
+                <p>
+                    In questa particolare fascia di età, fatta di cambiamenti e di costruzione della <b>propria identità</b>, scopo della terapia è 
+                    <b>accompagnare</b> i ragazzi nel loro <b>percorso di crescita</b> fornire loro strumenti per affrontare difficoltà <b>affettive, 
+                        relazionali o intellettive</b>. In questi casi, trattandosi di <b>minorenni</b>, il percorso prevede alcuni incontri iniziali 
+                        con i <b>genitori</b>, al fine di accogliere la richiesta di <b>aiuto</b> e conoscere la <b>storia evolutiva</b> del minore.
+                        Successivamente si effettueranno dei <b>colloqui conoscitivi</b> con il minore, al termine dei quali si valuterà il tipo di 
+                        <b>percorso da intraprendere</b>.
+                        <br>
+                        <br>
+                            <b><span style="color: #c39aaa;">A chi si rivolge?</span></b>
+                        <br>
+                        A <b>preadolescenti</b> dagli <b>11 ai 13 anni</b> e <b>adolescenti</b> dai <b>14 ai 18 anni</b>.
+                </p>
+            </div>
+
+            <!-- Terapia di Coppia -->
+            <div class="card-servizio">
+                <div class="icona-servizio"><i class="fas fa-user"></i></div>
+                <h3>Psicoterapia adulti</h3>
+                <p>
+                    Può capitare di trovarsi a vivere un qualche tipo di <b>disagio psicologico</b>, la difficoltà ad affrontare situazioni contingenti 
+                    della propria vita o a provare emozioni che sentiamo di non essere in grado di gestire e che hanno un impatto nella gestione della nostra 
+                    <b>quotidianità</b> e delle nostre <b>relazioni</b>. Un <b>percorso psicologico</b> inizia con una prima fase di <b>valutazione</b> e di 
+                    <b>reciproca conoscenza</b>, della durata di <b>tre colloqui</b>, durante i quali vengono individuati e concordati gli <b>obiettivi</b> del 
+                    lavoro terapeutico da intraprendere per affrontare le <b>difficoltà</b> e le <b>problematiche psicologiche</b> emerse durante gli incontri. 
+                    Tra i vari ambiti di intervento possiamo evidenziare i <b>disturbi d’ansia</b>, i <b>disturbi dell’umore</b>, le <b>fobie</b>, i <b>disturbi 
+                    del comportamento alimentare</b>, i <b>disturbi del sonno</b>, <b>problematiche relazionali</b>, <b>eventi traumatici</b> e <b>stress</b>.
+                </p>
+            </div>
+
+            <!-- Psicoterapia Familiare -->
+            <div class="card-servizio">
+                <div class="icona-servizio"><i class="fas fa-users"></i></div>
+                <h3>Sostegno alla genitorialità</h3>
+                <p>
+                    Il <b>supporto alla genitorialità</b> è un percorso volto ad accompagnare gli adulti che incontrano delle difficoltà nel loro <b>ruolo 
+                    genitoriale</b>. Scopo dell’intervento è fornire ai genitori uno <b>spazio di riflessione</b> per comprendere le difficoltà incontrate 
+                    dai propri figli durante il proprio <b>percorso evolutivo</b> e sviluppare con loro una relazione basata sulla <b>comunicazione</b> e 
+                    <b>comprensione reciproca</b>. Si tratta di un <b>percorso di crescita</b> dei genitori stessi, finalizzato ad acquisire <b>stili comunicativi
+                    </b> e strumenti di <b>ascolto</b> utili ad individuare eventuali <b>segnali di disagio</b> dei propri figli e sviluppare la capacità di fare 
+                    appropriate <b>scelte educative</b>.
+                    <br>
+                            <b><span style="color: #c39aaa;">A chi si rivolge?</span></b>
+                    <br>
+                    A <b>coppie</b>, <b>singoli genitori</b> e tutti coloro che svolgono una <b>funzione genitoriale</b>.
+                </p>
+                    
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quando Richiedere una Consulenza -->
+<section class="quando-consulenza">
+    <div class="container-consulenza">
+        
+        <!-- Immagine a sinistra -->
+        <div class="immagine-consulenza">
+            <img src="immagini/servizi/IMG_1749.jpeg" alt="Consulenza Psicologica">
+        </div>
+
+        <!-- Contenitore del testo a destra -->
+        <div class="testo-consulenza">
+            <h2>Quando richiedere una consulenza?</h2>
+            <div class="underline-consulenza"></div>
+            <p>Può essere utile rivolgersi a un professionista nei seguenti casi:</p>
+            <ul>
+                <li>In situazioni di <strong>ansia</strong> e periodi prolungati di <strong>stress</strong>;</li>
+                <li>In caso di <strong>fobie</strong>, pensieri negativi ricorrenti, attacchi di panico;</li>
+                <li>In caso di <strong>problemi lavorativi</strong>;</li>
+                <li>Se si è particolarmente <strong>preoccupati per un familiare</strong>;</li>
+                <li>Quando si accusano <strong>sintomi fisici senza una causa medica</strong>, malgrado gli accertamenti svolti (alcune dermatiti, insonnia, mal di pancia…);</li>
+                <li>Quando si ha l’impressione che uno o più familiari siano un po’ troppo <strong>“presenti”</strong>;</li>
+                <li>In caso di <strong>lutti, malattie, divorzi</strong>;</li>
+                <li>Per la <strong>morte di un animale da compagnia</strong> per cui si sta particolarmente male.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Quanto dura il percorso -->
+<section class="quanto-percorso">
+    <div class="container-percorso">
+        <!-- Contenitore del testo -->
+        <div class="testo-percorso">
+            <h2>Quanto dura il percorso?</h2>
+            <div class="underline-percorso"></div>
+            <p>
+                La <strong>durata</strong> del percorso terapeutico è <strong>medio – breve</strong> e viene concordata all’inizio della prima seduta con il paziente.
+                <br>
+                Dopo il primo mese circa, nel quale gli incontri sono <strong>settimanali</strong>, si passerà a una cadenza <strong>quindicinale</strong>. 
+                Nella prima fase detta di <strong>“contratto terapeutico”</strong> si concorderanno insieme anche gli <strong>obiettivi da raggiungere</strong>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container-footer">
+        
+        <!-- Sezione Fumetto -->
+        <div class="fumetto">
+            <img src="immagini/footer/jpg.svg" alt="Fumetto">
+        </div>
+
+        <!-- Sezione Social -->
+        <div class="social">
+            <a href="https://www.instagram.com/psicologagarino?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Icona Instagram">
+                <span class="sr-only">Profilo Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/psicoterapeutagarino" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Icona Facebook">
+                <span class="sr-only">Profilo Facebook</span>
+            </a>
+        </div>
+
+        <!-- Sezione Contatti -->
+        <div class="contatti">
+            <p><i class="fas fa-map-marker-alt"></i> Via Cibrario 53, Torino</p>
+            <p><i class="fas fa-phone-alt"></i> +39 3498417403</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">garino.valentina@gmail.com</a></p>
+        </div>
+
+        <!-- Sezione P.IVA e Copyright -->
+        <div class="info-legali">
+            <p>P.IVA 02417570971</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+            <p>© 2024 Valentina Garino - Tutti i diritti riservati</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

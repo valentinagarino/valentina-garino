@@ -1,0 +1,1436 @@
+/* Stile generale */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #d4a3a6;
+    /* D8C0BE; */
+}
+
+/* ___________________________________________________ */
+
+/* Stile per il menu di navigazione */
+/* Stile per il logo 
+.logo {
+    width: 160px;  
+    height: auto;
+    padding: 5px;
+}*/
+@font-face {
+    font-family: 'Kunstler Script';
+    src: url('font/KUNSTLER.TTF') format('woff'),
+         url('font/KUNSTLER.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo-text {
+    font-family: 'Kunstler Script', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    padding: 5px;
+}
+
+.highlight {
+    color: #9f3535; /* Colore evidenziato */
+    font-size: 38px; 
+    font-weight: bold;
+}
+
+/* Stile per i link del menu */
+.nav {
+    background-color: #c39aaa ;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 150px; 
+    list-style: none; 
+    padding-right: 30px;
+    border-bottom: 10px white;
+}
+
+.navbar-link {
+    color: #000000; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.navbar-link:hover {
+    color: #4B5563; 
+}
+
+/* ___________________________________________________ */
+
+/* Sezione Hero */
+.hero {
+    background-image: url('file:///Users/carlottasinisi/Desktop/sito_web/immagini/sfondo/sfondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 30px;
+    border-top: 1px solid #FFFFFF;
+    display: flex;
+}
+
+.hero h1 {
+    color: #303030;
+    font-size: 40px;
+    font-weight: bold; 
+    margin-left: 20px;;
+}
+
+.hero-underline {
+    width: 400px;
+    height: 2px;
+    background-color: #DADFE2;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 20px;;
+}
+
+.professione {
+    color: #3A3A3A;
+    font-size: 20px;
+    font-weight: bold; 
+    margin-left: 20px;;
+}
+
+.colloquio {
+    color: #3A3A3A;
+    font-size: 18px;
+    margin-left: 20px;;
+}
+
+.hero ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;;
+}
+
+.hero ul li {
+    color: #3A3A3A;
+}
+
+.citazione {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 300px;
+    color: #303030;
+}
+
+/* ___________________________________________________ */
+
+/* Sezione Perché Psicoterapia */
+.perche-psicoterapia {
+    background-color: #f8f8f8;
+    padding: 60px 10px 0px;
+    display: flex;
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Imposta tutto in colonna */
+    text-align: center; /* Centra il testo */ 
+}
+
+/* Contenitore principale */
+.container-perche-psicoterapia {
+    display: flex;
+    flex-direction: column; /* Dispone tutto in verticale */
+    align-items: center;
+    text-align: center;
+    /* Limita la larghezza del contenuto */
+    width: 1000px;
+}
+
+/* Contenitore del testo */
+.testo-perche-psicoterapia {
+    width: 110%;
+    max-width: 900px; /* Limita la larghezza del testo */
+    padding: 20px;
+}
+
+/* Titolo della sezione */
+.testo-perche-psicoterapia h2 {
+    color: #303030;
+    font-size: 40px; /* Stessa grandezza del titolo Hero */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Sottolineatura del titolo */
+.underline-perche {
+    width: 800px;
+    height: 2px;
+    background-color: #d4a3a6;
+    margin: 10px auto; /* Centra la sottolineatura */
+}
+
+/* Testo principale */
+.testo-perche-psicoterapia p {
+    color: #6b6b6b;
+    font-size: 18px; /* Stessa grandezza dei paragrafi Hero */
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ___________________________________________________ */
+
+/* Sezione Psicoterapia Online */
+.psicoterapia-online {
+    background-color: #f8f8f8;
+    padding-right: 20px;
+}
+
+.container-psicoterapia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Immagine a sinistra */
+.immagine_onl {
+    flex: 1;
+    min-width: 300px;
+    max-width: 40%;
+    text-align: center;
+}
+
+.immagine_onl img {
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-left: 200px;
+}
+
+/* Contenitore del testo a destra */
+.testo-psicoterapia {
+    flex: 2;
+    min-width: 300px;
+    max-width: 50%;
+    padding: 5px 30px;
+    margin: 30px;
+    margin-right: 150px;
+    
+}
+
+/* Titolo della sezione */
+.testo-psicoterapia h2 {
+    color: #303030;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Sottolineatura del titolo */
+.psicoterapia-online .underline_1  {
+    width: 350px;
+    height: 2px;
+    background-color: #d4a3a6;
+    margin-bottom: 20px;
+}
+
+/* Testo principale */
+.testo-psicoterapia p {
+    color: #6b6b6b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Lista puntata */
+.testo-psicoterapia ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.testo-psicoterapia ul li {
+    color: #6b6b6b;
+    line-height: 1.6;
+}
+
+/* Sottotitolo */
+.testo-psicoterapia h3 {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Link */
+.testo-psicoterapia a {
+    color: #d4a3a6;
+    text-decoration: underline;
+}
+
+/* ___________________________________________________ */
+
+/* Sezione Chi Sono */
+.chi-sono {
+    background-color: #f8f8f8;
+    padding-bottom: 80px;
+    padding-left: 30px;
+}
+
+/* Layout principale */
+.container-chi-sono {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-left: 30px;}
+
+/* Contenitore del testo a sinistra */
+.contenitore-testo {
+    flex: 2;
+    min-width: 300px;
+    max-width: 40%;
+    padding-left: 20px;  
+    margin-left: 80px;  
+}
+
+/* Titolo della sezione */
+.contenitore-testo h2 {
+    color: #303030;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Sottolineatura del titolo */
+.chi-sono .underline_2 {
+    width: 170px;
+    height: 2px;
+    background-color: #d4a3a6;
+    margin-bottom: 20px;
+}
+
+/* Nome e sottotitolo */
+.contenitore-testo h3 {
+    color: #4a4a4a;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sottotitolo {
+    font-size: 18px;
+    color: #6b6b6b;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Testo della descrizione */
+.testo {
+    color: #6b6b6b;
+    line-height: 1.6;
+}
+
+/* Immagine a destra */
+.immagine {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.immagine img {
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 5px solid white;
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 100px;
+}
+
+/* ___________________________________________________ */
+
+/* Sezione Dove mi trovo */
+.dove-mi-trovo {
+    background-color: #f8f8f8;
+    padding-right: 20px;
+}
+
+/* Layout principale */
+.container-dove-mi-trovo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+/* Mappa di Google a sinistra */
+.mappa-dove {
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    text-align: center;
+}
+
+.mappa-dove iframe {
+    border-radius: 4%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    height: 260px;
+    border: 5px solid white;
+    margin-left: 120px;
+}
+
+/* Contenitore del testo a destra */
+.testo-dove {
+    flex: 2;
+    min-width: 300px;
+    max-width: 50%;
+    padding: 30px;
+    margin: 0px 30px 80px;
+    margin-right: 150px;}
+
+/* Titolo della sezione */
+.testo-dove h2 {
+    color: #303030;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Sottolineatura del titolo */
+.underline_3 {
+    width: 270px;
+    height: 2px;
+    background-color: #d4a3a6;
+    margin-bottom: 20px;
+}
+
+/* Testo principale */
+.testo-dove p {
+    color: #6b6b6b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Lista puntata */
+.testo-dove ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.testo-dove ul li {
+    color: #6b6b6b;
+    line-height: 1.6;
+}
+
+/* ___________________________________________________ */
+
+/* Footer */
+.footer {
+    background-color: #d4a3a6 ; /* Colore rosa chiaro */
+    color: #000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Contenitore Footer */
+.container-footer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Fumetto */
+.fumetto img {
+    width: 120px;
+    height: auto;
+}
+
+/* Social */
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Contatti */
+.contatti {
+    text-align: left;
+}
+
+.contatti p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.contatti a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Info Legali */
+.info-legali {
+    text-align: right;
+}
+
+.info-legali p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.info-legali a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* ================================= */
+/*      RESPONSIVE DESIGN  HOME      */
+/* ================================= */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    
+    /* -------- NAVBAR -------- */
+    .navbar-menu {
+        display: none; /* Nasconde il menu principale su mobile */
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 10px;
+        background-color: #d4a3a6;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    /* Stile per l'hamburger menu */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    /* -------- HERO -------- */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .hero-underline {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    /* Citazione al centro */
+    .citazione {
+        text-align: center;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+
+    /* -------- PERCHE PSICOTERAPIA -------- */
+
+    .container-perche-psicoterapia {
+        max-width: 95%; /* Maggiore adattabilità */
+    }
+
+    .testo-perche-psicoterapia {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .underline-perche {
+        width: 60%;
+    }
+
+    /* -------- PSICOTERAPIA ONLINE -------- */
+    @media (max-width: 768px) {
+        .immagine_onl {
+            display: none !important; /* Nasconde l'intero div */
+        }
+    }
+
+    .testo-psicoterapia {
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .psicoterapia-online h2 {
+        text-align: center;
+    }
+
+    .psicoterapia-online .underline_1 {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    /* -------- CHI SONO -------- */
+    .chi-sono {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra il contenuto */
+        justify-content: center;
+        text-align: center;
+        width: 100%; /* Imposta la larghezza completa */
+    }
+    
+    .container-chi-sono {
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        margin-right: 30px; 
+        padding-right: 20px;
+   }
+
+    .chi-sono h2 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .underline_2 {
+        width: 170px;
+        height: 2px;
+        background-color: #d4a3a6;
+        margin: 10px auto; /* Centra la sottolineatura */
+    }
+    
+    .contenitore-testo {
+        max-width: 600px; /* Imposta una larghezza massima */
+        width: 100%;
+        text-align: center;
+        margin: 0 auto; /* Centra il contenitore */
+    }
+    
+    /* Testo centrato */
+    .testo {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.8;
+    }
+    
+    .immagine {
+        max-width: 80%; /* Impedisce overflow */
+        display: flex;
+        justify-content: center;
+        margin-right: 70px;
+    }
+
+    .immagine img {
+        width: 80%; /* Regola la dimensione dell'immagine */
+        max-width: 350px; /* Imposta un limite massimo */
+        margin-top: 20px; /* Spazio sopra l'immagine */
+        margin-left: 65px;
+    }
+
+
+    /* -------- DOVE MI TROVO -------- */
+    .mappa-dove iframe {
+        width: 80%; /* Ridimensiona la mappa per i dispositivi mobili */
+        width: 500px; /* Limita la grandezza massima */
+        height: 300px; /* Regola l'altezza per maggiore visibilità */
+        margin-top: 20px; /* Spazio sopra la mappa */
+        margin-left: 30px;
+    }
+    .dove-mi-trovo h2 {
+        text-align: center;
+    }
+
+    .testo-dove p {
+        text-align: center;
+    }
+
+    .underline_3 {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    /* -------- FOOTER -------- */
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    /* Rimuove il fumetto (SVG) */
+    .fumetto {
+        display: none;
+    }
+
+    /* Social: Instagram sopra Facebook */
+    .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Contatti e posizione al centro */
+    .contatti {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* P.IVA e Privacy a destra */
+    .info-legali {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* -------------------------------------------------------- Servizi ----------------------------------------------------- */
+
+/* Sezione Servizi */
+    .servizi {
+        background-color: #f8f8f8;
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    /* Titolo e sottolineatura */
+    .servizi h2 {
+        color: #303030;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .underline-servizi {
+        width: 150px;
+        height: 2px;
+        background-color: #d4a3a6;
+        margin: 10px auto 30px;
+    }
+
+    /* Contenitore delle card */
+    .box-servizi {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    /* Card individuale */
+    .card-servizio {
+        background-color: #ffffff;
+        border: 4px solid #d4a3a6;
+        border-radius: 15px;
+        padding: 30px 25px;
+        max-width: 400px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Icona sopra il titolo */
+    .icona-servizio {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    /* Titolo delle card */
+    .card-servizio h3 {
+        color: #c39aaa;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    /* Testo della card */
+    .card-servizio p {
+        color: #6b6b6b;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* ___________________________________________________ */
+
+    /* -- Quando Richiedere una Consulenza -- */
+    .quando-consulenza {
+        background-color: #f8f8f8;
+        padding: 30px 20px;
+    }
+
+    /* Contenitore principale */
+    .container-consulenza {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    /* Immagine a sinistra */
+    .immagine-consulenza {
+        flex: 1;
+        min-width: 300px;
+        max-width: 40%;
+        text-align: center;
+    }
+
+    .immagine-consulenza img {
+        width: 300px;
+        height: 380px;
+        object-fit: cover;
+        margin-left: 200px;
+        border-radius: 2%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 5px solid white;
+    }
+
+    /* Contenitore del testo a destra */
+    .testo-consulenza {
+        flex: 2;
+        min-width: 300px;
+        max-width: 50%;
+        padding: 5px 30px;
+        margin: 30px;
+        margin-right: 150px;
+    }
+
+    /* Titolo della sezione */
+    .testo-consulenza h2 {
+        color: #303030;
+        font-size: 33px;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    /* Sottolineatura del titolo */
+    .underline-consulenza {
+        width: 600px;
+        height: 2px;
+        background-color: #d4a3a6;
+        margin-bottom: 20px;
+    }
+
+    /* Testo principale */
+    .testo-consulenza p {
+        color: #6b6b6b;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* Lista puntata */
+    .testo-consulenza ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .testo-consulenza ul li {
+        color: #6b6b6b;
+        line-height: 1.6;
+    }
+
+    /* ___________________________________________________ */
+
+    /* -- Quanto dura il percorso -- */
+    .quanto-percorso {
+        background-color: #f8f8f8;
+        padding: 0px 20px 30px;
+    }
+
+    /* Contenitore principale */
+    .container-percorso {
+        display: flex;
+        justify-content: flex-start; /* Allinea il testo a sinistra */
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-left: 150px; /* Allinea a sinistra senza essere troppo attaccato */
+    }
+
+    /* Contenitore del testo */
+    .testo-percorso {
+        flex: 3;
+        min-width: 400px;
+        padding: 5px 20px;
+        margin: 30px;
+        margin-right: 150px;
+    }
+
+    /* Titolo della sezione */
+    .testo-percorso h2 {
+        color: #303030;
+        font-size: 33px;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    /* Sottolineatura del titolo */
+    .underline-percorso {
+        width: 400px;
+        height: 2px;
+        background-color: #d4a3a6;
+        margin-bottom: 20px;
+    }
+
+    /* Testo principale */
+    .testo-percorso p {
+        color: #6b6b6b;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* =================================== */
+    /*      RESPONSIVE DESIGN SERVIZI      */
+    /* =================================== */
+
+    /* 🟢 Responsive: Mobile (<768px) */
+    @media screen and (max-width: 768px) {
+
+        .container-percorso {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+    
+        .quanto-percorso {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            overflow-x: hidden;
+        }
+    
+        .testo-percorso {
+            width: 90%;
+            max-width: 600px;
+            padding: 0 15px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        .testo-percorso h2 {
+            font-size: 28px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 20px;
+            max-width: 90%;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+    
+        .underline-percorso {
+            width: 60%;
+            margin: 10px auto;
+        }
+    }
+
+    /* -------------------------------------------------------- Articoli ----------------------------------------------------- */
+    /* Sezione Articoli */
+    .articoli {
+        background-color: #f8f8f8;
+        padding: 40px 10px;
+        text-align: center;
+    }
+
+    /* Titolo e sottolineatura */
+    .articoli h2 {
+        color: #303030;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .underline-articoli {
+        width: 150px;
+        height: 2px;
+        background-color: #d4a3a6;
+        margin: 10px auto 30px;
+    }
+
+    /* Contenitore delle card */
+    .box-articoli {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    /* Card Articolo */
+    .card-articolo {
+        background-color: #ffffff;
+        border: 4px solid #d4a3a6;
+        border-radius: 15px;
+        padding: 25px;
+        width: 1100px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-articolo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-right: 30px;
+        opacity: 0.6; /* 🔹 Rende l'immagine più opaca (0 = completamente trasparente, 1 = completamente visibile) */
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .testo-articolo {
+        text-align: left;
+        flex: 1;
+    }
+
+    .testo-articolo h3 {
+        color: #c39aaa;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .testo-articolo p {
+        color: #6b6b6b;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .testo-articolo a {
+        font-weight: bold;
+        color: #303030;
+        text-decoration: none;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+        .card-articolo {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra tutto orizzontalmente */
+            text-align: center;
+            padding: 20px; /* Aumentato leggermente il padding */
+            margin-bottom: 25px; /* Aggiunto più spazio tra i box */
+        }
+    
+        .card-articolo img {
+            width: 80%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto 15px; /* Aumentato leggermente lo spazio sotto l'immagine */
+            display: block;
+        }
+    
+        .testo-articolo {
+            text-align: center;
+        }
+    
+    }
+
+
+/* -------------------------------------------------------- Articoli html----------------------------------------------------- */
+
+/* Sezione Articolo */
+.articolo {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Contenitore principale */
+.container-articolo {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* Titolo della sezione */
+.container-articolo h2 {
+    color: #303030;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Sottolineatura del titolo */
+.underline-articolo {
+    width: 400px;
+    height: 2px;
+    background-color: #d4a3a6;
+    margin: 10px auto 30px;
+}
+
+/* Contenitore immagine + testo */
+.contenuto-articolo {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+}
+
+/* Immagine a sinistra */
+.immagine-articolo {
+    flex: 1;
+    max-width: 27%;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.immagine-articolo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Testo a destra dell'immagine */
+.testo-articolo {
+    flex: 2;
+    max-width: 65%;
+    color: #6b6b6b;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.testo-articolo_2 p {
+    margin-bottom: 15px;
+    max-width: 100%;
+    text-align: justify;
+    color: #6b6b6b;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.testo-articolo_2 h3 {
+    color: #c39aaa;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+/* Testo che continua sotto la foto */
+
+.testo-articolo_2_psicologo p {
+    margin-bottom: 15px;
+    max-width: 100%;
+    text-align: justify;
+    color: #6b6b6b;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.testo-articolo_2_psicologo h3 {
+    color: #c39aaa;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.immagine-articolo_psico {
+    flex: 1;
+    max-width: 27%;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.immagine-articolo_psico img {
+    width: 100%;
+    height: 440px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.underline-articolo_depre {
+    width: 550px;
+    height: 2px;
+    background-color: #d4a3a6;
+    margin: 10px auto 30px;
+}
+
+.underline-articolo_psico {
+    width: 800px;
+    height: 2px;
+    background-color: #d4a3a6;
+    margin: 10px auto 30px;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .contenuto-articolo {
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .testo-articolo {
+        max-width: 90%;
+        text-align: justify;
+    }
+
+    .testo-articolo_2 {
+        max-width: 95%;
+        text-align: justify;
+        margin: 10px;
+    }
+
+    .immagine-articolo_psico {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .testo-articolo_2_psicologo {
+        max-width: 95%;
+        text-align: justify;
+        margin: 10px;
+    }
+    
+    .container-articolo {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .container-articolo p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+/* Adattamenti per iPad */
+@media screen and (max-width: 1024px) {
+
+    /* Navbar */
+    .navbar-menu {
+        gap: 40px; /* Riduce lo spazio tra i link */
+        padding-right: 10px;
+    }    
+
+    /* Hero Section */
+
+    .citazione {
+        font-size: 16px;
+        margin-left: 50px;
+    }
+
+    /* Sezione "Perché Psicoterapia" */
+    .container-perche-psicoterapia {
+        width: 90%; /* Usa una percentuale per una larghezza adattiva */
+        max-width: 700px;
+    }
+
+    .underline-perche {
+        width: 400px; /* Imposta una larghezza adeguata */
+        height: 2px; /* Spessore della sottolineatura */
+        background-color: #d4a3a6; /* Colore della sottolineatura */
+        margin: 10px auto; /* Margine automatico per centrare */
+        display: block;
+    }
+
+    /* Sezione Psicoterapia Online */
+    .container-psicoterapia {
+        flex-direction: column; /* Mette testo e immagine in colonna */
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Centratura del titolo e underline in Psicoterapia Online */
+    .testo-psicoterapia {
+        max-width: 90%;
+        margin: 0 auto; /* Centra il contenuto */
+        text-align: center; /* Allinea il testo al centro */
+    }
+
+    .testo-psicoterapia h2 {
+        max-width: 90%;
+        margin: 0 auto; /* Centra il titolo */
+        text-align: center;
+        }
+
+    .underline_1 {
+        width: 200px; /* Imposta una larghezza adeguata */
+        height: 2px; /* Spessore della sottolineatura */
+        background-color: #d4a3a6; /* Colore della sottolineatura */
+        margin: 10px auto; /* Margine automatico per centrare */
+        display: block;
+    }
+
+
+    .immagine_onl img {
+        margin-left: 0;
+        width: 90%; /* Rende l'immagine più adattabile */
+        max-width: 400px;
+    }
+
+    /* Sezione Chi Sono */
+    .container-chi-sono {
+        flex-direction: column; /* Mette immagine e testo in colonna */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenitore-testo h2 {
+        max-width: 90%;
+        margin: 0 auto; /* Centra il titolo */
+        text-align: center;
+    }
+    
+    .underline_2 {
+        width: 200px; /* Imposta una larghezza adeguata */
+        height: 2px; /* Spessore della sottolineatura */
+        background-color: #d4a3a6; /* Colore della sottolineatura */
+        margin: 10px auto; /* Margine automatico per centrare */
+        display: block;
+    }
+
+    .contenitore-testo {
+        max-width: 90%;
+        margin-left: 0;
+    }
+
+    .immagine img {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    /* Sezione "Dove mi trovo" */
+    .container-dove-mi-trovo {
+        flex-direction: column; /* Imposta layout verticale */
+        text-align: center;
+        gap: 20px;
+    }
+
+    .mappa-dove iframe {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .testo-dove {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-footer {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column; /* <--- cambia da row a column */
+        align-items: center;    /* <--- centra orizzontalmente */
+        justify-content: center;
+        gap: 20px;
+    }
+    .info-legali {
+        text-align: center;
+    }
+
+    .container-consulenza {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin: 0 auto;
+    }
+    .testo-consulenza {
+        max-width: 95%;
+        text-align: center;
+        margin: 0 auto 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+    .immagine-consulenza {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .immagine-consulenza img {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }

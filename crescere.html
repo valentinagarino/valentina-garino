@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentina Garino - Psicoterapeuta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="">
+    <!-- Navbar -->
+    <nav class="py-0.5">
+        <!-- Contenitore principale della Navbar -->
+        <div class="container mx-0 px-2 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <div class="logo-text">
+                <a href="index.html">
+                    D.ssa <span class="highlight">V</span>alentina <span class="highlight">G</span>arino
+                </a>
+            </div>
+            
+            <!-- Icona Hamburger -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Fine Logo -->
+
+            <!-- Menu di Navigazione -->
+            <ul class="navbar-menu">
+                <li>
+                    <a href="index.html" class="navbar-link">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="servizi.html" class="navbar-link">
+                        Servizi
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="articoli.html" class="navbar-link" style="text-decoration: underline;">
+                        Articoli
+                    </a>
+                </li>
+            </ul>
+            <!-- Fine Menu di Navigazione -->
+        </div>
+        <!-- Fine Contenitore principale della Navbar -->
+    </nav>
+    <!-- Fine Navbar -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navbar-menu");
+        
+            hamburger.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+        </script>
+
+<!-- Sezione Articolo -->
+<section class="articolo">
+    <div class="container-articolo">
+        <h2>La fatica di crescere</h2>
+        <div class="underline-articolo"></div>
+
+        <div class="contenuto-articolo">
+            <!-- Immagine a sinistra -->
+            <div class="immagine-articolo">
+                <img src="immagini/articoli/crescere.jpg" 
+                alt="La fatica di crescere" 
+                width="300" 
+                height="200">
+            </div>
+
+            <!-- Testo a destra dell'immagine -->
+            <div class="testo-articolo">
+                <p>
+                    L’adolescenza può essere considerata <b>l’età dei paradossi</b>: si pretende di essere totalmente autonomi,
+                    ma nello stesso tempo si richiede l’attenzione dei genitori attraverso i comportamenti della vita
+                    quotidiana. L’adolescente proclama verità assolute, ma nello stesso tempo dubita profondamente di
+                    se stesso; si dichiara fortemente individualista, ma cerca la sua identità nell’uniformarsi al gruppo.
+                </p>
+                <p>
+                    Stiamo parlando, evidentemente, di una fase della vita molto complessa. Questo periodo è
+                    caratterizzato, in primo luogo, dallo <b>sviluppo puberale</b>, cioè da una modificazione fisiologica
+                    dell’organismo. Tutta l’età dell’adolescenza sarà caratterizzata, quindi, dagli effetti fisiologici, ma
+                    anche psicologici e sociali di queste trasformazioni corporee.
+                </p>
+            </div>
+        </div>
+
+        <!-- Testo che continua sotto la foto -->
+        <div class="testo-articolo_2">
+            <p>
+                Da quando nasciamo, e forse anche prima, la nostra vita è costellata di emozioni: <b>rabbia, gioia,
+                sorpresa, disgusto, tristezza, vergogna, paura</b>. Durante l’adolescenza le emozioni si manifestano
+                facilmente, frequentemente e a volte anche rumorosamente. Caratteristica è la rapidità della
+                comparsa così come della fine di un’emozione, nonché la rapidità con cui un’emozione si
+                sostituisce ad un’altra.
+            </p>
+            <p>
+                Per tutta la durata di questa particolare fase della vita coesistono, nell’adolescente, <b>due bisogni
+                contraddittori</b>: il <b>bisogno di separazione</b> e il <b>bisogno di dipendenza</b>.
+            </p>
+            <p>
+                Il ruolo del genitore è molto importante, non solo perché fornisce una sicurezza materiale, ma
+                perché assorbe i colpi e sopravvive ad essi, perché continua ad esserci, nonostante tutto, per
+                proteggere e contenere. Il compito è tutt’altro che facile e la <b>crisi adolescenziale</b> può trasformarsi in
+                una vera e propria <b>crisi genitoriale</b>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container-footer">
+        
+        <!-- Sezione Fumetto -->
+        <div class="fumetto">
+            <img src="immagini/footer/jpg.svg" alt="Fumetto">
+        </div>
+
+        <!-- Sezione Social -->
+        <div class="social">
+            <a href="https://www.instagram.com/psicologagarino?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Icona Instagram">
+                <span class="sr-only">Profilo Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/psicoterapeutagarino" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Icona Facebook">
+                <span class="sr-only">Profilo Facebook</span>
+            </a>
+        </div>
+
+        <!-- Sezione Contatti -->
+        <div class="contatti">
+            <p><i class="fas fa-map-marker-alt"></i> Via Cibrario 53, Torino</p>
+            <p><i class="fas fa-phone-alt"></i> +39 3498417403</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">garino.valentina@gmail.com</a></p>
+        </div>
+
+        <!-- Sezione P.IVA e Copyright -->
+        <div class="info-legali">
+            <p>P.IVA 02417570971</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+            <p>© 2024 Valentina Garino - Tutti i diritti riservati</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html> 

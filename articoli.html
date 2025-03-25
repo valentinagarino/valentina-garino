@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentina Garino - Psicoterapeuta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="">
+    <!-- Navbar -->
+    <nav class="py-0.5">
+        <!-- Contenitore principale della Navbar -->
+        <div class="container mx-0 px-2 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <div class="logo-text">
+                <a href="index.html">
+                    D.ssa <span class="highlight">V</span>alentina <span class="highlight">G</span>arino
+                </a>
+            </div>
+            
+            <!-- Icona Hamburger -->
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Fine Logo -->
+
+            <!-- Menu di Navigazione -->
+            <ul class="navbar-menu">
+                <li>
+                    <a href="index.html" class="navbar-link">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="servizi.html" class="navbar-link">
+                        Servizi
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="articoli.html" class="navbar-link" style="text-decoration: underline;">
+                        Articoli
+                    </a>
+                </li>
+            </ul>
+            <!-- Fine Menu di Navigazione -->
+        </div>
+        <!-- Fine Contenitore principale della Navbar -->
+    </nav>
+    <!-- Fine Navbar -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navbar-menu");
+        
+            hamburger.addEventListener("click", function () {
+                navMenu.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+<!-- Sezione Articoli -->
+<section class="articoli">
+    <h2>Articoli</h2>
+    <div class="underline-articoli"></div>
+    
+    <div class="box-articoli">
+        <!-- Primo Articolo -->
+        <div class="card-articolo">
+            <img src="immagini/articoli/gravidanza.jpg" alt="Vivere la gravidanza">
+            <div class="testo-articolo">
+                <h3>Vivere la gravidanza</h3>
+                <p>Oggi un bambino è spesso frutto di una scelta consapevole. Durante l’attesa, i genitori iniziano a immaginarlo, tra desideri e aspettative. 
+                    La madre si prepara a nutrirlo e proteggerlo, mentre il padre lo vede già autonomo. Accogliere i cambiamenti della gravidanza permette di 
+                    vivere pienamente questa esperienza unica... </p>
+                <a href="gravidanza.html">Clicca per leggere l'articolo completo.</a>
+            </div>
+        </div>
+        
+        <!-- Secondo Articolo -->
+        <div class="card-articolo">
+            <img src="immagini/articoli/crescere.jpg" alt="La fatica di crescere">
+            <div class="testo-articolo">
+                <h3>La fatica di crescere</h3>
+                <p>L’adolescenza è l’età dei paradossi: si cerca indipendenza, ma si desidera ancora l’attenzione dei genitori. Le emozioni sono intense e 
+                    mutevoli, mentre il bisogno di separazione convive con quello di dipendenza. In questo periodo di trasformazioni, il ruolo dei genitori 
+                    resta fondamentale nel fornire sicurezza e supporto...</p>
+                <a href="crescere.html">Clicca per leggere l'articolo completo.</a>
+            </div>
+        </div>
+        
+        <!-- Terzo Articolo -->
+        <div class="card-articolo">
+            <img src="immagini/articoli/postpartum.jpg" alt="La depressione post partum">
+            <div class="testo-articolo">
+                <h3>La depressione post partum</h3>
+                <p>Il parto segna una profonda trasformazione per la madre, tra gioia, aspettative e un inevitabile senso di distacco. Il bambino reale prende 
+                    il posto di quello immaginato, richiedendo un nuovo equilibrio emotivo. Accettare il cambiamento, riconoscere dubbi e paure, e chiedere 
+                    supporto non significa essere meno madri, ma più consapevoli.</p>
+                <a href="depressione.html">Clicca per leggere l'articolo completo.</a>
+            </div>
+        </div>
+
+        <!-- Quarto Articolo -->
+        <div class="card-articolo">
+            <img src="immagini/articoli/psicologo.jpg" alt="La fatica di crescere">
+            <div class="testo-articolo">
+                <h3>Psicologo, psicoterapeuta, neurologo, psichiatra... facciamo un po’ di chiarezza</h3>
+                <p>Lo psicologo offre supporto e diagnosi, lo psicoterapeuta un percorso terapeutico specializzato. Il neurologo tratta disturbi neurologici, 
+                    mentre lo psichiatra cura disturbi psichici con approccio medico e farmacologico. Spesso, la combinazione di più figure garantisce un 
+                    trattamento più efficace.
+                </p>
+                <a href="psicologo.html">Clicca per leggere l'articolo completo.</a>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container-footer">
+        
+        <!-- Sezione Fumetto -->
+        <div class="fumetto">
+            <img src="immagini/footer/jpg.svg" alt="Fumetto">
+        </div>
+
+        <!-- Sezione Social -->
+        <div class="social">
+            <a href="https://www.instagram.com/psicologagarino?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Icona Instagram">
+                <span class="sr-only">Profilo Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/psicoterapeutagarino" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Icona Facebook">
+                <span class="sr-only">Profilo Facebook</span>
+            </a>
+        </div>
+
+        <!-- Sezione Contatti -->
+        <div class="contatti">
+            <p><i class="fas fa-map-marker-alt"></i> Via Cibrario 53, Torino</p>
+            <p><i class="fas fa-phone-alt"></i> +39 3498417403</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">garino.valentina@gmail.com</a></p>
+        </div>
+
+        <!-- Sezione P.IVA e Copyright -->
+        <div class="info-legali">
+            <p>P.IVA 02417570971</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+            <p>© 2024 Valentina Garino - Tutti i diritti riservati</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
